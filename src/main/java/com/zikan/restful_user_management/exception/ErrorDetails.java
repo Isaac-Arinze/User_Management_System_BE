@@ -1,2 +1,19 @@
-package com.zikan.restful_user_management.exception;public class ErrorDetails {
+package com.zikan.restful_user_management.exception;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ErrorDetails {
+    private LocalDateTime timeStamp;
+    private String message;
+    private String path;
+    private String errorCode;
 }

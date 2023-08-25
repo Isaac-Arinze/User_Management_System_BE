@@ -62,7 +62,7 @@ public class UserController {
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
-    @Operation(
+    @Operation( 
             summary = "Get Users REST API",
             description = " Get All User from the  database"
     )
